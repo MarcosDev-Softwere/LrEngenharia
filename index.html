@@ -1,0 +1,644 @@
+!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Construtora XYZ | Soluções para Construção Civil</title>
+    
+    <!-- Meta tags para SEO -->
+    <meta name="description" content="Construção civil de alta qualidade. Soluções inovadoras para obras, reformas e infraestrutura.">
+    <meta name="keywords" content="construção civil, engenharia, arquitetura, obras, reformas, infraestrutura, empreendimentos">
+    <meta name="author" content="Construtora XYZ">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.construtoraxyz.com.br/">
+    <meta property="og:title" content="Construção Civil | Obras e Reformas de Qualidade">
+    <meta property="og:description" content="Oferecemos soluções inovadoras em engenharia e construção civil para projetos seguros e eficientes.">
+    <meta property="og:image" content="https://www.construtoraxyz.com.br/imagem-banner.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.construtoraxyz.com.br/">
+    <meta property="twitter:title" content="Construtora XYZ | Soluções em Engenharia e Construção">
+    <meta property="twitter:description" content="Transformamos projetos em realidade com qualidade, segurança e eficiência.">
+    <meta property="twitter:image" content="https://www.construtoraxyz.com.br/imagem-banner.jpg">
+    
+    <!-- Favicons -->
+    
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icons/ÍCONE  PADRÃO - MEGA ADUBOS.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#1B5E20">
+    <meta name="msapplication-TileColor" content="#1B5E20">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!-- Fontes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    
+    <!-- CSS (Será adicionado posteriormente) -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="responsive.css">
+    
+    <!-- jQuery (será usado posteriormente) -->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous" defer=""></script>
+    
+    <!-- Script principal (será usado posteriormente) -->
+    <script src="./main.js" defer=""></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader hidden" id="preloader" style="display: none;">
+        <div class="preloader__spinner">
+            <svg viewBox="0 0 50 50" class="preloader__svg">
+                <circle class="preloader__circle" cx="25" cy="25" r="20"></circle>
+            </svg>
+        </div>
+        <img src="./CarlaPisicologa.png" alt="Mega Adubos" class="preloader__logo">
+    </div>
+    <!-- Cabeçalho -->
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <!-- Logo -->
+                <a href="index.html" class="header__logo-link">
+                    <img src="./Logo-luan.png" alt="Mega Adubos" class="header__logo" width="180" height="60">
+                </a>
+                
+                <!-- Navegação -->
+                <nav class="nav" id="mainNav" aria-label="Menu principal">
+                    <button class="nav__toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Abrir menu">
+                        <span class="nav__toggle-icon"></span>
+                        <span class="nav__toggle-icon"></span>
+                        <span class="nav__toggle-icon"></span>
+                    </button>
+                    
+                    <div class="nav__menu" id="navMenu">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a href="#home" class="nav__link nav__link--active" data-scroll="">Home</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#servicos" class="nav__link" data-scroll="">Serviços</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#sobre" class="nav__link" data-scroll="">Sobre</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="#contato" class="nav__link" data-scroll="">Contato</a>
+                            </li>
+                            <li class="nav__item nav__item--mobile">
+                                <a href="#contato" class="btn btn--primary" data-scroll="">
+                                    <i class="fas fa-file-invoice-dollar"></i>
+                                    <span>Solicitar Orçamento</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="nav__action">
+                        <a href="#contato" class="btn btn--primary" data-scroll="">
+                            <i class="fas fa-file-invoice-dollar"></i>
+                            <span>Solicitar Orçamento</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container">
+                <div class="hero__wrapper">
+                    <div class="hero__content fade-in" data-aos="fade-right">
+                        <h1 class="hero__title">Construção inteligente para ambientes seguros e funcionais</h1>
+                        <p class="hero__subtitle">Com expertise no setor da construção civil, desenvolvemos projetos inovadores que unem eficiência, segurança e conforto. Nossa abordagem técnica e estratégica garante soluções de alto desempenho, alinhadas às necessidades específicas de cada cliente.</p>
+                        <div class="hero__actions">
+                            <a href="#servicos" class="btn btn--yellow btn--lg" data-scroll="">
+                                <i class="fas fa-leaf"></i>
+                                <span>Nossos Serviços</span>
+                            </a>
+                            <a href="#contato" class="btn btn--outline btn--lg" data-scroll="">
+                                <i class="fas fa-headset"></i>
+                                <span>Fale Conosco</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="hero__visual fade-in" data-aos="fade-left">
+                        <div class="hero__image-wrapper">
+                            <img src="./Luan-00.png" alt="Trator aplicando fertilizantes em plantação" class="hero__image" width="600" height="400" loading="eager">
+                            <div class="hero__badge">
+                                <i class="fas fa-chart-line hero__badge-icon"></i>
+                                <span class="hero__badge-text">Maximize a eficiência e reduza prazos na sua obra .</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero__shapes">
+                <div class="hero__shape hero__shape--1"></div>
+                <div class="hero__shape hero__shape--2"></div>
+            </div>
+            
+            <div class="hero__scroll">
+                <a href="#servicos" class="hero__scroll-link" data-scroll="" aria-label="Rolar para baixo">
+                    <i class="fas fa-chevron-down"></i>
+                </a>
+            </div>
+        </section>
+        
+        <!-- Serviços Section -->
+        <section class="section section--light" id="servicos">
+            <div class="container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">O QUE OFERECEMOS</span>
+                    <h2 class="section__title">Nossos Serviços</h2>
+                    <p class="section__description">Oferecemos serviços especializados para maximizar a eficiência e garantir resultados de alto desempenho na execução de projetos. Com planejamento estratégico, tecnologia de ponta e compromisso com a qualidade, proporcionamos soluções que otimizam recursos, reduzem prazos e elevam o padrão das construções.</p>
+                </header>
+                
+                <div class="services">
+                    <div class="services__grid">
+                        <!-- Serviço 1 -->
+                        <article class="service-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="service-card__icon">
+                                <i class="fas fa-tools"></i>
+                                <!--<i class="fas fa-seedling"></i>-->
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Construção: da planta à conclusão do projeto.</h3>
+                                <p class="service-card__text">Projetamos e executamos cada etapa da construção, desde a concepção da planta até a conclusão do projeto, garantindo qualidade, eficiência e resultados que atendem às suas necessidades.</p>
+                                <a href="#contato" class="service-card__link" data-scroll="">
+                                    <span>Saiba Mais</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        <!-- Serviço 2 -->
+                        <article class="service-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="service-card__icon">
+                                <i class="fas fa-cog"></i>
+                                <!--<i class="fas fa-flask"></i>-->
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Manutenção preventiva e corretiva</h3>
+                                <p class="service-card__text">Executamos manutenção preventiva e corretiva com precisão, garantindo a segurança, durabilidade e desempenho ideal das estruturas, prevenindo falhas e otimizando sua vida útil.</p>
+                                <a href="#contato" class="service-card__link" data-scroll="">
+                                    <span>Saiba Mais</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                        
+                        <!-- Serviço 3 -->
+                        <article class="service-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="service-card__icon">
+                                <i class="fas fa-hammer"></i>
+                                <!--<i class="fas fa-broom"></i>-->
+                            </div>
+                            <div class="service-card__content">
+                                <h3 class="service-card__title">Reforma geral</h3>
+                                <p class="service-card__text">Executamos reformas gerais com foco na revitalização e modernização de espaços, garantindo funcionalidade, segurança e eficiência, sempre alinhadas às melhores práticas e soluções sustentáveis.</p>
+                                <a href="#contato" class="service-card__link" data-scroll="">
+                                    <span>Saiba Mais</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section__shapes">
+                <div class="section__shape section__shape--1"></div>
+                <div class="section__shape section__shape--2"></div>
+            </div>
+        </section>
+        
+        <!-- Sobre Section -->
+        <section class="section section--green" id="sobre">
+            <div class="container">
+                <div class="about">
+                    <div class="about__image" data-aos="fade-right">
+                        <div class="about__image-wrapper">
+                            <img src="./Logo-luan.png" alt="Equipe da Mega Adubos em campo" class="about__img" width="600" height="400" loading="lazy">
+                            <div class="about__experience">
+                                <span class="about__experience-number">5</span>
+                                <span class="about__experience-text">Anos de<br>Experiência</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about__content" data-aos="fade-left">
+                        <header class="section__header section__header--left">
+                            <span class="section__subtitle section__subtitle--light">CONHEÇA NOSSA EMPRESA</span>
+                            <h2 class="section__title section__title--light">Sobre a LR Engenharia</h2>
+                        </header>
+                        
+                        <div class="about__text">
+                            <p>Somos especialistas em soluções para o setor da construção civil, com foco em projetos de alta qualidade e serviços inovadores que garantem o melhor aproveitamento dos recursos.</p>
+                            <p>Nossa equipe de profissionais qualificados trabalha para oferecer produtos e serviços que contribuem diretamente para a eficiência, segurança e sustentabilidade das obras, garantindo resultados superiores em cada projeto.</p>
+                        </div>
+                        
+                        <div class="stats">
+                            <div class="stats__grid">
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+                                    <span class="stat-item__number" data-count="50">250</span>
+                                    <span class="stat-item__label">Clientes satisfeitos</span>
+                                </div>
+                                
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+                                    <span class="stat-item__number" data-count="5">3</span>
+                                    <span class="stat-item__label">Estados atendidos</span>
+                                </div>
+                                
+                                <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+                                    <span class="stat-item__number" data-count="25">25</span>
+                                    <span class="stat-item__label">% de aumento médio na produção</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section__shapes">
+                <div class="section__shape section__shape--3"></div>
+                <div class="section__shape section__shape--4"></div>
+            </div>
+        </section>
+        
+        <!-- Benefícios Section -->
+        <section class="section section--light">
+            <div class="container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">POR QUE NOS ESCOLHER</span>
+                    <h2 class="section__title">Nossos Diferenciais</h2>
+                    <p class="section__description">Descubra o que torna a LR Engenharia a escolha ideal para transformar seus projetos de construção em realidade. Com inovação, qualidade e eficiência, garantimos soluções estruturais que impulsionam o seu empreendimento.</p>
+                </header>
+                
+                <div class="benefits">
+                    <div class="benefits__grid">
+                        <!-- Benefício 1 -->
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="100">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Qualidade Superior</h3>
+                            <p class="benefit-card__text">Nossos materiais passam por rigorosos controles de qualidade, garantindo resistência, durabilidade e eficiência em cada obra.</p>
+                        </div>
+                        
+                        <!-- Benefício 2 -->
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="200">
+                            <div class="benefit-card__icon">
+                                <!--<i class="fas fa-wrench"></i>-->
+                                <i class="fas fa-microchip"></i>
+                                <!--<i class="fas fa-microscope"></i>-->
+                            </div>
+                            <h3 class="benefit-card__title">Tecnologia Avançada</h3>
+                            <p class="benefit-card__text">Utilizamos tecnologias modernas para desenvolver materiais que garantem máxima resistência e eficiência nas obras.</p>
+                        </div>
+                        
+                        <!-- Benefício 3 -->
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="300">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Sustentabilidade</h3>
+                            <p class="benefit-card__text">"Desenvolvemos nossos processos e materiais com foco na preservação ambiental e  sustentabilidade na engenharia civil, garantindo soluções inovadoras e eficientes para projetos comprometidos com o futuro.</p>
+                        </div>
+                        
+                        <!-- Benefício 4 -->
+                        <div class="benefit-card" data-aos="fade-up" data-aos-delay="400">
+                            <div class="benefit-card__icon">
+                                <i class="fas fa-truck-moving"></i>
+                            </div>
+                            <h3 class="benefit-card__title">Logística Eficiente</h3>
+                            <p class="benefit-card__text">Garantimos a conclusão ágil e eficiente de projetos de construção civil , assegurando cumprimento de prazos e máxima qualidade para o sucesso do seu empreendimento.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta__wrapper" data-aos="fade-up">
+                    <h2 class="cta__title">Pronto para transformar seu projeto em realidade ?</h2>
+                    <p class="cta__text">Entre em contato conosco hoje mesmo e descubra como nossos serviços e soluções podem transformar sua obra, garantindo qualidade, eficiência e segurança em cada etapa da construção.</p>
+                    <a href="#contato" class="btn btn--yellow btn--lg" data-scroll="">
+                        <i class="fas fa-file-signature"></i>
+                        <span>Solicitar Orçamento</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="cta__overlay"></div>
+        </section>
+        
+        <!-- Contato Section -->
+        <section class="section section--light" id="contato">
+            <div class="container">
+                <header class="section__header" data-aos="fade-up">
+                    <span class="section__subtitle">FALE CONOSCO</span>
+                    <h2 class="section__title">Entre em Contato</h2>
+                    <p class="section__description">Estamos prontos para atender às suas necessidades. Entre em contato conosco e descubra como podemos ajudar.</p>
+                </header>
+                
+                <div class="contact">
+                    <div class="contact__grid">
+                        <!-- Informações de Contato -->
+                        <div class="contact__info" data-aos="fade-right">
+                            <h3 class="contact__heading">Informações de Contato</h3>
+                            
+                            <ul class="contact__list">
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Endereço</h4>
+                                        <p class="contact__item-text">Av. Raul Seixas, Dias d'Ávila - BA, 42850-000</p>
+                                    </div>
+                                </li>
+                                
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-phone-alt"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Telefone</h4>
+                                        <p class="contact__item-text">
+                                            <a href="tel:+5571996201179" class="contact__link">(71) 99620-1179</a><br> 
+                                            <a href="tel:+5571997394368" class="contact__link">(71) 99739-4368</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Email</h4>
+                                        <p class="contact__item-text">
+                                            <a href="mailto:contato@megaadubos.com.br" class="contact__link">contato@megaadubos.com.br</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                
+                                <li class="contact__item">
+                                    <div class="contact__item-icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="contact__item-content">
+                                        <h4 class="contact__item-title">Horário de Atendimento</h4>
+                                        <p class="contact__item-text">Segunda a Sexta: 8h às 18h<br>Sábado: 8h às 12h</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            
+                            <div class="contact__social">
+                                <h4 class="contact__social-title">Redes Sociais</h4>
+                                <div class="social">
+                                    <a href="#" class="social__link" aria-label="Facebook">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                    <a href="#" class="social__link" aria-label="Instagram">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                    <a href="#" class="social__link" aria-label="YouTube">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="#" class="social__link" aria-label="LinkedIn">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                    <a href="https://wa.me/5571996201179" class="social__link social__link--whatsapp" aria-label="WhatsApp">
+                                        <i class="fab fa-whatsapp"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Formulário de Contato -->
+                       <div class="contact__form" data-aos="fade-left">
+                          <form id="contactForm" class="form" action="https://formsubmit.co/marcosviniciussouzasilva07@gmail.com" method="POST" target="_blank">
+
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="name" class="form__label">Nome Completo</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-user"></i>
+                                            <input type="text" id="name" name="name" class="form__input" placeholder="Seu nome" required="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="email" class="form__label">Email</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-envelope"></i>
+                                            <input type="email" id="email" name="email" class="form__input" placeholder="Seu email" required="">
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__row">
+                                    <div class="form__group">
+                                        <label for="phone" class="form__label">Telefone</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-phone-alt"></i>
+                                            <input type="tel" id="phone" name="phone" class="form__input" placeholder="Seu telefone" required="">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form__group">
+                                        <label for="subject" class="form__label">Assunto</label>
+                                        <div class="form__input-wrapper">
+                                            <i class="form__input-icon fas fa-tag"></i>
+                                            <select id="subject" name="subject" class="form__input" required="">
+                                                <option value="" disabled="" selected="">Selecione uma opção</option>
+                                                <option value="Orçamento Fertilizantes">Orçamento Construção</option>
+                                                <option value="Orçamento Varredura">Orçamento Manutenção </option>
+                                                <option value="Informações Gerais">Orçamento Reforma </option>
+                                                <option value="Suporte Técnico">Informações Gerais</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__group">
+                                    <label for="message" class="form__label">Mensagem</label>
+                                    <div class="form__input-wrapper">
+                                        <i class="form__input-icon fas fa-comment-alt"></i>
+                                        <textarea id="message" name="message" class="form__input form__textarea" placeholder="Sua mensagem" required=""></textarea>
+                                    </div>
+                                </div>
+                                
+                                <div class="form__group form__group--checkbox">
+                                    <label class="form__checkbox-label">
+                                        <input type="checkbox" name="agree" id="agree" class="form__checkbox" required="">
+                                        <span class="form__checkbox-text">Concordo com a <a href="#" class="form__link">Política de Privacidade</a></span>
+                                    </label>
+                                </div>
+                                
+                                <!-- Campos ocultos para FormSubmit.co -->
+                                <input type="hidden" name="_captcha" value="false">
+                                <input type="hidden" name="_next" value="http://bit.ly/3GTncxY">
+                                <input type="hidden" name="_subject" value="Novo contato pelo site - marcosviniciussouzasilva07">
+                                <input type="text" name="_honey" style="display:none">
+                                
+                                <div class="form__actions">
+                                    <button type="submit" class="btn btn--primary btn--full">
+                                        <i class="fas fa-paper-plane"></i>
+                                        <span>Enviar Mensagem</span>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section__shapes">
+                <div class="section__shape section__shape--5"></div>
+                <div class="section__shape section__shape--6"></div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__top">
+                <div class="footer__brand">
+                    <a href="index.html" class="footer__logo-link">
+                        <img src="./Luan-00.png" alt="Mega Adubos" class="footer__logo" width="160" height="53">
+                    </a>
+                    <p class="footer__tagline">Soluções completas em materiais e serviços para obras e reformas, garantindo qualidade, segurança e eficiência na construção civil.</p>
+                </div>
+                
+                <div class="footer__nav">
+                    <div class="footer__nav-col">
+                        <h3 class="footer__heading">Links Rápidos</h3>
+                        <ul class="footer__links">
+                            <li><a href="#home" class="footer__link" data-scroll="">Home</a></li>
+                            <li><a href="#servicos" class="footer__link" data-scroll="">Serviços</a></li>
+                            <li><a href="#sobre" class="footer__link" data-scroll="">Sobre</a></li>
+                            <li><a href="#contato" class="footer__link" data-scroll="">Contato</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__nav-col">
+                        <h3 class="footer__heading">Produtos</h3>
+                        <ul class="footer__links">
+                            <li><a href="#" class="footer__link">Construção</a></li>
+                            <li><a href="#" class="footer__link">Manutenção</a></li>
+                            <li><a href="#" class="footer__link">Reforma </a></li>
+                            <li><a href="#" class="footer__link">Informações Gerai</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer__nav-col">
+                        <h3 class="footer__heading">Contato</h3>
+                        <ul class="footer__contact">
+                            <li class="footer__contact-item">
+                                <i class="fas fa-map-marker-alt footer__contact-icon"></i>
+                                <span class="footer__contact-text">Av. Raul Seixas, Dias d'Ávila - BA, 42850-000</span>
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="fas fa-phone-alt footer__contact-icon"></i>
+                                <span class="footer__contact-text">(71) 99620-1179 <br> (71) 99739-4368</span>
+                            </li>
+                            <li class="footer__contact-item">
+                                <i class="fas fa-envelope footer__contact-icon"></i>
+                                <span class="footer__contact-text">contato@megaadubos.com.br</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>© <span id="currentYear">2025</span> LR Engenharia. Todos os direitos reservados.</p>
+                </div>
+                
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" class="footer__social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                
+                <div class="footer__developer">
+                    <p>Desenvolvido com <i class="fas fa-heart"></i> por <a href="#" class="footer__developer-link">Tarcísio Souza</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer__shapes">
+            <div class="footer__shape footer__shape--1"></div>
+            <div class="footer__shape footer__shape--2"></div>
+        </div>
+    </footer>
+    
+    <!-- Back to Top Button -->
+    <a href="#home" class="back-to-top" id="backToTop" data-scroll="" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+    
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/5571996201179?text=Olá,%20gostaria%20de%20informações%20sobre%20a%20Mega%20Adubos" class="whatsapp-btn" target="_blank" rel="noopener noreferrer" aria-label="Falar pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+        <span class="whatsapp-btn__tooltip">Fale conosco</span>
+    </a>
+    
+    <!-- Cookie Consent -->
+    <div class="cookie-consent" id="cookieConsent">
+        <div class="cookie-consent__content">
+            <div class="cookie-consent__icon">
+                <i class="fas fa-cookie-bite"></i>
+            </div>
+            <div class="cookie-consent__text">
+                <h3 class="cookie-consent__title">Nós usamos cookies</h3>
+                <p class="cookie-consent__description">Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site.</p>
+            </div>
+            <div class="cookie-consent__actions">
+                <button class="btn btn--sm btn--outline-white" id="cookieSettings">Configurações</button>
+                <button class="btn btn--sm btn--yellow" id="cookieAccept">Aceitar todos</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Esquema de dados estruturados para SEO -->
+    <script type="application/ld+json">
+   
+    </script>
+    
+    <!-- Esquema de dados locais para SEO -->
+    <script type="application/ld+json">
+    
+    </script>
+
+</body></html>
