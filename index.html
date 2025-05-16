@@ -1,3 +1,4 @@
+
 !DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -122,7 +123,9 @@
             <div class="container">
                 <div class="hero__wrapper">
                     <div class="hero__content fade-in" data-aos="fade-right">
-                        <h1 class="hero__title">Construção inteligente para ambientes seguros e funcionais</h1>
+                        <!--<h1 class="hero__title">Construção inteligente para ambientes seguros e funcionais</h1>-->
+                         <h1 class="hero__title" id="typewriter">L.R Engenharia .</h1>
+
                         <p class="hero__subtitle">Com expertise no setor da construção civil, desenvolvemos projetos inovadores que unem eficiência, segurança e conforto. Nossa abordagem técnica e estratégica garante soluções de alto desempenho, alinhadas às necessidades específicas de cada cliente.</p>
                         <div class="hero__actions">
                             <a href="#servicos" class="btn btn--yellow btn--lg" data-scroll="">
@@ -632,6 +635,21 @@
     </div>
     
     <!-- Esquema de dados estruturados para SEO -->
+
+     <script>
+const text = "Construção inteligente para ambientes seguros e funcionais";
+let i = 0;
+
+function typeEffect() {
+    if (i < text.length) {
+        document.getElementById("typewriter").textContent += text.charAt(i);
+        i++;
+        setTimeout(typeEffect, 100);
+    }
+}
+
+window.onload = typeEffect;
+</script>
     <script type="application/ld+json">
    
     </script>
